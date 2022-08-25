@@ -428,7 +428,7 @@ U 1 1 61CD37AD
 P 5800 3950
 F 0 "Q2" H 5950 4100 50  0000 L CNN
 F 1 "IRF530" H 5550 4100 50  0000 L CNN
-F 2 "Xenir:TO-220-Horizontal" H 6050 3875 50  0001 L CIN
+F 2 "xenir:TO-220-Horizontal-RD-Mosfet" H 6050 3875 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 5800 3950 50  0001 L CNN
 	1    5800 3950
 	1    0    0    -1  
@@ -439,7 +439,7 @@ U 1 1 61CD4539
 P 5800 4950
 F 0 "Q3" H 5950 5100 50  0000 L CNN
 F 1 "IRF530" H 5550 5100 50  0000 L CNN
-F 2 "Xenir:TO-220-Horizontal" H 6050 4875 50  0001 L CIN
+F 2 "xenir:TO-220-Horizontal-RD-Mosfet" H 6050 4875 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 5800 4950 50  0001 L CNN
 	1    5800 4950
 	1    0    0    1   
@@ -6030,12 +6030,12 @@ Wire Wire Line
 	4300 4550 4300 4350
 Connection ~ 4300 4350
 $Comp
-L xenir:T37_XFRM T?
+L xenir:T37_XFRM T3
 U 1 1 630FAECC
 P 8500 4000
-F 0 "T?" H 8500 4041 50  0000 C CNN
-F 1 "T37_XFRM" H 8500 3950 50  0000 C CNN
-F 2 "" H 8500 4000 50  0001 C CNN
+F 0 "T3" H 8500 4041 50  0000 C CNN
+F 1 "Ferrite Tube" H 8500 3950 50  0000 C CNN
+F 2 "xenir:Ferrite-Tube-Transformer-SMD" H 8500 4000 50  0001 C CNN
 F 3 "" H 8500 4000 50  0001 C CNN
 	1    8500 4000
 	1    0    0    -1  
@@ -6043,12 +6043,12 @@ $EndComp
 Wire Wire Line
 	6300 4325 6300 4550
 $Comp
-L xenir:T37_XFRM T?
+L xenir:T37_XFRM T2
 U 1 1 63134E4D
 P 7250 4000
-F 0 "T?" H 7250 4041 50  0000 C CNN
+F 0 "T2" H 7250 4041 50  0000 C CNN
 F 1 "T50-43" H 7250 3950 50  0000 C CNN
-F 2 "" H 7250 4000 50  0001 C CNN
+F 2 "xenir:T50_Transformer" H 7250 4000 50  0001 C CNN
 F 3 "" H 7250 4000 50  0001 C CNN
 	1    7250 4000
 	1    0    0    -1  
@@ -6088,10 +6088,10 @@ Wire Wire Line
 	8100 5700 6850 5700
 Connection ~ 6850 5700
 $Comp
-L xenir:Capacitor C?
+L xenir:Capacitor C9
 U 1 1 63196FB6
 P 7800 4900
-F 0 "C?" V 7771 5015 28  0000 L CNN
+F 0 "C9" V 7771 5015 28  0000 L CNN
 F 1 ".1uF" V 7828 5015 28  0000 L CNN
 F 2 "Xenir:Capacitor 1206" H 7800 4750 50  0001 C CNN
 F 3 "" H 7800 4750 50  0001 C CNN
@@ -6099,10 +6099,10 @@ F 3 "" H 7800 4750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 63196FC0
 P 7800 5050
-F 0 "#PWR?" H 7800 4800 50  0001 C CNN
+F 0 "#PWR0103" H 7800 4800 50  0001 C CNN
 F 1 "GND" H 7805 4877 50  0000 C CNN
 F 2 "" H 7800 5050 50  0001 C CNN
 F 3 "" H 7800 5050 50  0001 C CNN

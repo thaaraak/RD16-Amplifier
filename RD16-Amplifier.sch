@@ -828,8 +828,6 @@ F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 9250 2750 50  0001 C CNN
 	1    9250 2750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10000 2450 10000 2750
 $Comp
 L Connector_Generic:Conn_01x02 J7
 U 1 1 61E9AA01
@@ -6110,4 +6108,49 @@ F 3 "" H 7800 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 7800 4750
+$Comp
+L Diode:1N914 D8
+U 1 1 6308F48C
+P 10150 2450
+F 0 "D8" H 10150 2233 50  0000 C CNN
+F 1 "1N914" H 10150 2324 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 10150 2275 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 10150 2450 50  0001 C CNN
+	1    10150 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N914 D9
+U 1 1 6308F496
+P 10150 2750
+F 0 "D9" H 10150 2967 50  0000 C CNN
+F 1 "1N914" H 10150 2876 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 10150 2575 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 10150 2750 50  0001 C CNN
+	1    10150 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 2450 10450 2450
+Wire Wire Line
+	10450 2450 10450 2750
+Wire Wire Line
+	10450 2750 10300 2750
+$Comp
+L xenir:Capacitor C?
+U 1 1 630B2858
+P 8100 4450
+F 0 "C?" V 8050 4250 28  0000 L CNN
+F 1 "33pF" V 8100 4250 28  0000 L CNN
+F 2 "Xenir:Capacitor 1206" H 8100 4300 50  0001 C CNN
+F 3 "" H 8100 4300 50  0001 C CNN
+	1    8100 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 4150 8100 4300
+Connection ~ 8100 4150
+Wire Wire Line
+	8100 4600 8100 4750
+Connection ~ 8100 4750
 $EndSCHEMATC
